@@ -1,0 +1,22 @@
+PODS:
+  - Postal (0.5.0):
+    - Postal/Core (= 0.5.0)
+  - Postal/Core (0.5.0):
+    - Result (~> 3.2)
+  - Result (3.2.4)
+
+DEPENDENCIES:
+  - Postal
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Postal
+    - Result
+
+SPEC CHECKSUMS:
+  Postal: f131b117770a6238241222bb1a53dca0dc4bd561
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+
+PODFILE CHECKSUM: 2f760f98262ce96f689dff07eb0728ca7ba31fd1
+
+COCOAPODS: 1.6.1

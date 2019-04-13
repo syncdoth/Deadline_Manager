@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FDB4EE24642A136F082CC5 /* Pods_Deadline_Creator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4AE61A4E53505283D78FB /* Pods_Deadline_Creator.framework */; };
 		154ED9262261F66A00D409B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154ED9252261F66A00D409B8 /* AppDelegate.swift */; };
 		154ED9282261F66A00D409B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154ED9272261F66A00D409B8 /* ViewController.swift */; };
 		154ED92B2261F66A00D409B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154ED9292261F66A00D409B8 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		154ED92C2261F66B00D409B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154ED92F2261F66B00D409B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154ED9312261F66B00D409B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205306300A66ADE7789675B6 /* Pods-Deadline Creator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deadline Creator.release.xcconfig"; path = "Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator.release.xcconfig"; sourceTree = "<group>"; };
+		460EACF41A62356345AD093D /* Pods-Deadline Creator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deadline Creator.debug.xcconfig"; path = "Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator.debug.xcconfig"; sourceTree = "<group>"; };
+		FBB4AE61A4E53505283D78FB /* Pods_Deadline_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deadline_Creator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FDB4EE24642A136F082CC5 /* Pods_Deadline_Creator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				154ED9242261F66A00D409B8 /* Deadline Creator */,
 				154ED9232261F66A00D409B8 /* Products */,
+				DEBE22CF2ACE84B305ECB277 /* Pods */,
+				B4030522C5D5041B7DAEA64A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = "Deadline Creator";
 			sourceTree = "<group>";
 		};
+		B4030522C5D5041B7DAEA64A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4AE61A4E53505283D78FB /* Pods_Deadline_Creator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEBE22CF2ACE84B305ECB277 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460EACF41A62356345AD093D /* Pods-Deadline Creator.debug.xcconfig */,
+				205306300A66ADE7789675B6 /* Pods-Deadline Creator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 154ED9342261F66B00D409B8 /* Build configuration list for PBXNativeTarget "Deadline Creator" */;
 			buildPhases = (
+				E57231E7016BEF29079BBFEE /* [CP] Check Pods Manifest.lock */,
 				154ED91E2261F66A00D409B8 /* Sources */,
 				154ED91F2261F66A00D409B8 /* Frameworks */,
 				154ED9202261F66A00D409B8 /* Resources */,
+				4D62D1274838E50D8366A422 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D62D1274838E50D8366A422 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Postal/Postal.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Postal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57231E7016BEF29079BBFEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deadline Creator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		154ED91E2261F66A00D409B8 /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		154ED9352261F66B00D409B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460EACF41A62356345AD093D /* Pods-Deadline Creator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		154ED9362261F66B00D409B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205306300A66ADE7789675B6 /* Pods-Deadline Creator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

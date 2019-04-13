@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A23C4EA8A429CD97D80AB4A504878C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2539CBDFD931D1EC865C113DBCF14 /* Foundation.framework */; };
+		073770D7BE5999EEB04BA379E5AD398E /* Pods-Deadline Creator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3182DEFCC83EC1C46E72000534D65E6 /* Pods-Deadline Creator-dummy.m */; };
+		0C410AE6BCECC5FD85B33CD69E6278BA /* Libetpan+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43151141AD2DC799B2F380AADC9BC5 /* Libetpan+Util.swift */; };
+		14B390F29F0E6F821129C9BAF3B5656E /* Postal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C94F2BF91AC682EA610DB27D5916542E /* Postal-dummy.m */; };
+		195BCEEF365E6EF3D68FFA0C40D2DA09 /* CertificateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C4928A0FEB3636513073A82B8CED8 /* CertificateUtils.swift */; };
+		19E658C67885D2CE6BB086706F1E08C1 /* IMAPSession+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6100BC300ACABFEB370E61B762B10EF /* IMAPSession+Fetch.swift */; };
+		1B8693C5DE3F42EC802E59233927EB03 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C66867998B57F4546E61FFC7855EE7A /* Util.swift */; };
+		1E42BBDCAE455650BB7DF216818E35EA /* IMAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C694D59CA3D5D07C1CF0D5D3250C638 /* IMAPError.swift */; };
+		22ECC1316BD05822F52BF07C2015292E /* IMAPCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF8DB85D99DC48FD297573108CB0025 /* IMAPCapability.swift */; };
+		278C6F336EF6EA1F4857826A810E9AE3 /* Message+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905952C264E5B51C86842118AEF04B8E /* Message+Parsing.swift */; };
+		2911B698397987E8AF9E9AE1C57B743B /* MailPart+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC94878B25AD1DB7CD783AE04DC7D2E /* MailPart+Parsing.swift */; };
+		294A38A63023B9641CAF67AA0D3063A7 /* FetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6AFA02FBB148BDB05AD1375D33AB3 /* FetchResult.swift */; };
+		2EB7E337FA458E7432A8552096B60C90 /* IMAPSession+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CB1628E098D90B5CA1099758171542 /* IMAPSession+Move.swift */; };
+		324F0B793F838CDDF2E3B285471BD639 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0C57A577BD3C81B48E2766CF89BD7 /* Logger.swift */; };
+		3920A968250992EC2A4EB8546967DCD1 /* Pods-Deadline Creator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E33B9C8D2D00741468FA922CDBC3E8D8 /* Pods-Deadline Creator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		419F2BC751F59DD8597C39040F7A65F1 /* MimeType+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9F9F5109BFBF2D0B861E92FAF8FDE /* MimeType+Parsing.swift */; };
+		4CC4BEF4AE769221A9CF7B6C6E8ADF3F /* IMAPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12565103FD32645A3C2449B78DDFBDF /* IMAPSession.swift */; };
+		4F2BEF32B488533AAA7D9A14C2608268 /* Postal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A798DC0A723AEB02F252D8F306C84DE2 /* Postal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52E286C6C085F0B054BD0CB30C603B58 /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7433B085240B130278C926E6D60BA11 /* Result-dummy.m */; };
+		5D0D1A3884DAAD967C10403352975619 /* MimeFields+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC4BEFFA75BF4AD6F14E5F90AA44A56 /* MimeFields+Parsing.swift */; };
+		65BF73D560CCE494FA6E6E37C2384046 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E11E72701A99DB1B8AC54E4800E342 /* Result.swift */; };
+		6A5D814BBA3B493406907C927A94CB61 /* IMFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81602249130C71390A7BA4A331D4A747 /* IMFError.swift */; };
+		6FC26B53E23E9D7397365D48790CA6AB /* MailPart+Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8646161EC2D5E1BFFBA1CD60D88E37D8 /* MailPart+Enumeration.swift */; };
+		73946CBF1E560B9C3789E652DEAEB51E /* MessageAttribute+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F91A49A2BADCE5A67B917C4D77115 /* MessageAttribute+Parsing.swift */; };
+		7748DCE41E5E6DA50EC9FA0C244035C0 /* Address+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E7846F5CDFF554FB286E708FC0D16 /* Address+Parsing.swift */; };
+		7E2145F3254D742758DAF8E59712DF26 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC37AA6DF8C2CD6FC2E3F995BE09C9 /* ResultProtocol.swift */; };
+		867B150B3C9283E15E2C3665A2D3E380 /* ContentEncoding+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85651929CF9305D0E7358194C8EB8D9B /* ContentEncoding+Parsing.swift */; };
+		8C34C6939C5832D7405B3869B3BCF728 /* Result-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B45FE2B1391687F4D476E375BE751D /* Result-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D90B20DAC9295D0B9127E5C38E2066E /* IMAPSession+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED555E1057C43CB1E60C22439BFF6BB /* IMAPSession+Search.swift */; };
+		93622380794904A2440AA351AA11C16D /* MessageFlags+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7871F69AAA9DF3BE0CC1315589781D0 /* MessageFlags+Parsing.swift */; };
+		9A8E74D5A88AB24F618D93DF5F5F2346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2539CBDFD931D1EC865C113DBCF14 /* Foundation.framework */; };
+		9B49F9EB9E5EDFCDA5743E772A6AE721 /* IMAPNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B63EE48867BB289D030235C68D700E /* IMAPNamespace.swift */; };
+		A112D20E917D4B805F1842AE3A578B62 /* Extension+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E7FA92E2620566899B24951DF30 /* Extension+Parsing.swift */; };
+		A999F38368CF9D2723E68C829EE5C92E /* IMAPIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D16C2A4648EB4FB2400EA0EAD113D5 /* IMAPIdentity.swift */; };
+		AF94A9F4E38C1901E87E9C927CD4F13C /* PostalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333EF825227AF3BEDB704B5BA7DDB4D /* PostalError.swift */; };
+		AFA06772376D4F67246EB48625FD1202 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A922A55ED35A6887522EDB25C324B6 /* Configuration.swift */; };
+		B7DD3190F5A699D5EAA9CFDA9F1744C2 /* IMAPSession+Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B20678434ADF9732CAC5DB99C269E51 /* IMAPSession+Folder.swift */; };
+		BA4AB8E2657DD4DBF8350FFC3745AD20 /* Logger+IMAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA607109573343A4EA6A4101F39EE0 /* Logger+IMAP.swift */; };
+		BBC666A7E8035C5EC9EF8B7781B65075 /* Postal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25690E401D9706BA65D7A7C3C8BD026 /* Postal.swift */; };
+		CE90975C1B9FABFCEB12F2456F84E83D /* IMAPFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22C26637664BEED4875F284B63F1C3 /* IMAPFolder.swift */; };
+		D468A747FD2C7BD858F86CDD2491D57C /* MailData+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F693692FE2BB178762E6E41FEB4744E /* MailData+Decode.swift */; };
+		D9155D2D63BEB96B0F22C32234FE24C3 /* ContentDisposition+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5500CD12DDEEB3E4B8C253590DEDA70A /* ContentDisposition+Parsing.swift */; };
+		DC07A41FC1912EA0CFBBC764256CB2BE /* IMAPSession+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDED1F2E5CBD426A873FCC328A505DFF /* IMAPSession+List.swift */; };
+		E98705DCDB149B0CAEAED52D220F550B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4FFC1A7C925CA92A93A5234D06C0DF /* Result.framework */; };
+		EB4430D8304231FDEB620441F08C843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D2539CBDFD931D1EC865C113DBCF14 /* Foundation.framework */; };
+		EB4F70CE969366D7CF4DF5FA1C323FC7 /* MessageHeader+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5351450C48BD2C1C963A172470D8D2F7 /* MessageHeader+Parsing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04BACF04AC0F02D9970D5A5FBC57FD82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B6F83F03244EB7A3253BA8E0E869C8;
+			remoteInfo = Result;
+		};
+		D1CBF0718D5D4D072B83DA972A7165E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B91270FBDD67C74BB019455544FE9DE;
+			remoteInfo = Postal;
+		};
+		D8283D73EE1A31E0E347E3B1C2668EF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B6F83F03244EB7A3253BA8E0E869C8;
+			remoteInfo = Result;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15BC37AA6DF8C2CD6FC2E3F995BE09C9 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
+		17EA607109573343A4EA6A4101F39EE0 /* Logger+IMAP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Logger+IMAP.swift"; path = "Postal/Logger+IMAP.swift"; sourceTree = "<group>"; };
+		18A922A55ED35A6887522EDB25C324B6 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Postal/Configuration.swift; sourceTree = "<group>"; };
+		1CC4BEFFA75BF4AD6F14E5F90AA44A56 /* MimeFields+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MimeFields+Parsing.swift"; path = "Postal/MimeFields+Parsing.swift"; sourceTree = "<group>"; };
+		256E7846F5CDFF554FB286E708FC0D16 /* Address+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Address+Parsing.swift"; path = "Postal/Address+Parsing.swift"; sourceTree = "<group>"; };
+		293F91A49A2BADCE5A67B917C4D77115 /* MessageAttribute+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageAttribute+Parsing.swift"; path = "Postal/MessageAttribute+Parsing.swift"; sourceTree = "<group>"; };
+		2A1D38E0FA618E8110854C19DAA601F1 /* Pods-Deadline Creator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Deadline Creator-Info.plist"; sourceTree = "<group>"; };
+		2AFE1B1C9A295A7A9271D003D56AA6A9 /* Postal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Postal-Info.plist"; sourceTree = "<group>"; };
+		2F693692FE2BB178762E6E41FEB4744E /* MailData+Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailData+Decode.swift"; path = "Postal/MailData+Decode.swift"; sourceTree = "<group>"; };
+		31B63EE48867BB289D030235C68D700E /* IMAPNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPNamespace.swift; path = Postal/IMAPNamespace.swift; sourceTree = "<group>"; };
+		35B45FE2B1391687F4D476E375BE751D /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
+		43D16C2A4648EB4FB2400EA0EAD113D5 /* IMAPIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPIdentity.swift; path = Postal/IMAPIdentity.swift; sourceTree = "<group>"; };
+		4C66867998B57F4546E61FFC7855EE7A /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Postal/Util.swift; sourceTree = "<group>"; };
+		4C694D59CA3D5D07C1CF0D5D3250C638 /* IMAPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPError.swift; path = Postal/IMAPError.swift; sourceTree = "<group>"; };
+		4CC94878B25AD1DB7CD783AE04DC7D2E /* MailPart+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailPart+Parsing.swift"; path = "Postal/MailPart+Parsing.swift"; sourceTree = "<group>"; };
+		5351450C48BD2C1C963A172470D8D2F7 /* MessageHeader+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageHeader+Parsing.swift"; path = "Postal/MessageHeader+Parsing.swift"; sourceTree = "<group>"; };
+		5500CD12DDEEB3E4B8C253590DEDA70A /* ContentDisposition+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ContentDisposition+Parsing.swift"; path = "Postal/ContentDisposition+Parsing.swift"; sourceTree = "<group>"; };
+		59034FE2F7B87A37B50594BB060DAFDC /* Pods-Deadline Creator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Deadline Creator.modulemap"; sourceTree = "<group>"; };
+		59A75AC3414F2FE200046A6A6952DDCA /* Pods-Deadline Creator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Deadline Creator.release.xcconfig"; sourceTree = "<group>"; };
+		673F082CD0653FB88D332AC89C141E8F /* Pods-Deadline Creator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Deadline Creator.debug.xcconfig"; sourceTree = "<group>"; };
+		694C4928A0FEB3636513073A82B8CED8 /* CertificateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CertificateUtils.swift; path = Postal/CertificateUtils.swift; sourceTree = "<group>"; };
+		6B20678434ADF9732CAC5DB99C269E51 /* IMAPSession+Folder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Folder.swift"; path = "Postal/IMAPSession+Folder.swift"; sourceTree = "<group>"; };
+		6B4FFC1A7C925CA92A93A5234D06C0DF /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FCE992943E043905125CC90937240F7 /* Pods-Deadline Creator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Deadline Creator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		734188E0BAE5942FE7910B74365C428F /* Postal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Postal.modulemap; sourceTree = "<group>"; };
+		756A3D9297D3A0444063EE5C882B7639 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Result.modulemap; sourceTree = "<group>"; };
+		770154CC2EC510186293FD2B4E338D7C /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
+		7A22C26637664BEED4875F284B63F1C3 /* IMAPFolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPFolder.swift; path = Postal/IMAPFolder.swift; sourceTree = "<group>"; };
+		7F43151141AD2DC799B2F380AADC9BC5 /* Libetpan+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Libetpan+Util.swift"; path = "Postal/Libetpan+Util.swift"; sourceTree = "<group>"; };
+		81602249130C71390A7BA4A331D4A747 /* IMFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMFError.swift; path = Postal/IMFError.swift; sourceTree = "<group>"; };
+		85651929CF9305D0E7358194C8EB8D9B /* ContentEncoding+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ContentEncoding+Parsing.swift"; path = "Postal/ContentEncoding+Parsing.swift"; sourceTree = "<group>"; };
+		8646161EC2D5E1BFFBA1CD60D88E37D8 /* MailPart+Enumeration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailPart+Enumeration.swift"; path = "Postal/MailPart+Enumeration.swift"; sourceTree = "<group>"; };
+		8E1B0E7FA92E2620566899B24951DF30 /* Extension+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Extension+Parsing.swift"; path = "Postal/Extension+Parsing.swift"; sourceTree = "<group>"; };
+		905952C264E5B51C86842118AEF04B8E /* Message+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+Parsing.swift"; path = "Postal/Message+Parsing.swift"; sourceTree = "<group>"; };
+		9132E6CEFC753F063EC95E919A9EA5BD /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CB1628E098D90B5CA1099758171542 /* IMAPSession+Move.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Move.swift"; path = "Postal/IMAPSession+Move.swift"; sourceTree = "<group>"; };
+		99ED7A740C616079FE332A5002D991C9 /* Postal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Postal.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7433B085240B130278C926E6D60BA11 /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
+		A798DC0A723AEB02F252D8F306C84DE2 /* Postal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-umbrella.h"; sourceTree = "<group>"; };
+		A9D0C57A577BD3C81B48E2766CF89BD7 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Postal/Logger.swift; sourceTree = "<group>"; };
+		AEF8DB85D99DC48FD297573108CB0025 /* IMAPCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPCapability.swift; path = Postal/IMAPCapability.swift; sourceTree = "<group>"; };
+		B25690E401D9706BA65D7A7C3C8BD026 /* Postal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Postal.swift; path = Postal/Postal.swift; sourceTree = "<group>"; };
+		B333EF825227AF3BEDB704B5BA7DDB4D /* PostalError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostalError.swift; path = Postal/PostalError.swift; sourceTree = "<group>"; };
+		B5C98895A43D18D150C436F7E807C0D9 /* Postal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Postal.framework; path = Postal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62B68D08BE6D8389B07FAE161AAD0D7 /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
+		B7871F69AAA9DF3BE0CC1315589781D0 /* MessageFlags+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageFlags+Parsing.swift"; path = "Postal/MessageFlags+Parsing.swift"; sourceTree = "<group>"; };
+		B8C7E2AE52A3AF99D0FEB877697A2075 /* Result-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Result-Info.plist"; sourceTree = "<group>"; };
+		BED555E1057C43CB1E60C22439BFF6BB /* IMAPSession+Search.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Search.swift"; path = "Postal/IMAPSession+Search.swift"; sourceTree = "<group>"; };
+		C3182DEFCC83EC1C46E72000534D65E6 /* Pods-Deadline Creator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Deadline Creator-dummy.m"; sourceTree = "<group>"; };
+		C8E11E72701A99DB1B8AC54E4800E342 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
+		C94F2BF91AC682EA610DB27D5916542E /* Postal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Postal-dummy.m"; sourceTree = "<group>"; };
+		D6100BC300ACABFEB370E61B762B10EF /* IMAPSession+Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Fetch.swift"; path = "Postal/IMAPSession+Fetch.swift"; sourceTree = "<group>"; };
+		D9F4A1CD6556BE7FCCEF594CC4B1226B /* Pods_Deadline_Creator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Deadline_Creator.framework; path = "Pods-Deadline Creator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33B9C8D2D00741468FA922CDBC3E8D8 /* Pods-Deadline Creator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Deadline Creator-umbrella.h"; sourceTree = "<group>"; };
+		E8B6AFA02FBB148BDB05AD1375D33AB3 /* FetchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchResult.swift; path = Postal/FetchResult.swift; sourceTree = "<group>"; };
+		EDED1F2E5CBD426A873FCC328A505DFF /* IMAPSession+List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+List.swift"; path = "Postal/IMAPSession+List.swift"; sourceTree = "<group>"; };
+		EFF9F9F5109BFBF2D0B861E92FAF8FDE /* MimeType+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MimeType+Parsing.swift"; path = "Postal/MimeType+Parsing.swift"; sourceTree = "<group>"; };
+		F12565103FD32645A3C2449B78DDFBDF /* IMAPSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPSession.swift; path = Postal/IMAPSession.swift; sourceTree = "<group>"; };
+		F1945FA5D88F168E68F0E8AAD1545093 /* Pods-Deadline Creator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Deadline Creator-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6D2539CBDFD931D1EC865C113DBCF14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FCFD21C9B53A742EDF075BCC40A24536 /* Postal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-prefix.pch"; sourceTree = "<group>"; };
+		FFD1D322DBACF69C5B3BDE3F4BE83198 /* Pods-Deadline Creator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Deadline Creator-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F89A7BCEE04A54790BFDF8A46911F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A23C4EA8A429CD97D80AB4A504878C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD8F8DDA5679E4FFDFF78DEB80CB580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4430D8304231FDEB620441F08C843C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1C628DB0361BDAF255DD0E10ADDD15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A8E74D5A88AB24F618D93DF5F5F2346 /* Foundation.framework in Frameworks */,
+				E98705DCDB149B0CAEAED52D220F550B /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F947B7D5D856DCC47AAFB56AE02BDCC /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				C8E11E72701A99DB1B8AC54E4800E342 /* Result.swift */,
+				15BC37AA6DF8C2CD6FC2E3F995BE09C9 /* ResultProtocol.swift */,
+				6A2D00DB606075A9EF9A97D09D04E9B2 /* Support Files */,
+			);
+			name = Result;
+			path = Result;
+			sourceTree = "<group>";
+		};
+		23476FB9F22620082C2E3B6CABAD2A92 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2539CBDFD931D1EC865C113DBCF14 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2F666FDD08EF95DE0843B230CF5643F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4FFC1A7C925CA92A93A5234D06C0DF /* Result.framework */,
+				23476FB9F22620082C2E3B6CABAD2A92 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C7F5935769BB1FE2944C3942096216D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F4A1CD6556BE7FCCEF594CC4B1226B /* Pods_Deadline_Creator.framework */,
+				B5C98895A43D18D150C436F7E807C0D9 /* Postal.framework */,
+				9132E6CEFC753F063EC95E919A9EA5BD /* Result.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40520CF46E70C5CA7D0D6797455AE895 /* Postal */ = {
+			isa = PBXGroup;
+			children = (
+				415A4221CFC867332F6CDA61866DE709 /* Core */,
+				A60A1AD23A5096FB094EB86110BFCAC9 /* Support Files */,
+			);
+			name = Postal;
+			path = Postal;
+			sourceTree = "<group>";
+		};
+		415A4221CFC867332F6CDA61866DE709 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				256E7846F5CDFF554FB286E708FC0D16 /* Address+Parsing.swift */,
+				694C4928A0FEB3636513073A82B8CED8 /* CertificateUtils.swift */,
+				18A922A55ED35A6887522EDB25C324B6 /* Configuration.swift */,
+				5500CD12DDEEB3E4B8C253590DEDA70A /* ContentDisposition+Parsing.swift */,
+				85651929CF9305D0E7358194C8EB8D9B /* ContentEncoding+Parsing.swift */,
+				8E1B0E7FA92E2620566899B24951DF30 /* Extension+Parsing.swift */,
+				E8B6AFA02FBB148BDB05AD1375D33AB3 /* FetchResult.swift */,
+				AEF8DB85D99DC48FD297573108CB0025 /* IMAPCapability.swift */,
+				4C694D59CA3D5D07C1CF0D5D3250C638 /* IMAPError.swift */,
+				7A22C26637664BEED4875F284B63F1C3 /* IMAPFolder.swift */,
+				43D16C2A4648EB4FB2400EA0EAD113D5 /* IMAPIdentity.swift */,
+				31B63EE48867BB289D030235C68D700E /* IMAPNamespace.swift */,
+				F12565103FD32645A3C2449B78DDFBDF /* IMAPSession.swift */,
+				D6100BC300ACABFEB370E61B762B10EF /* IMAPSession+Fetch.swift */,
+				6B20678434ADF9732CAC5DB99C269E51 /* IMAPSession+Folder.swift */,
+				EDED1F2E5CBD426A873FCC328A505DFF /* IMAPSession+List.swift */,
+				92CB1628E098D90B5CA1099758171542 /* IMAPSession+Move.swift */,
+				BED555E1057C43CB1E60C22439BFF6BB /* IMAPSession+Search.swift */,
+				81602249130C71390A7BA4A331D4A747 /* IMFError.swift */,
+				7F43151141AD2DC799B2F380AADC9BC5 /* Libetpan+Util.swift */,
+				A9D0C57A577BD3C81B48E2766CF89BD7 /* Logger.swift */,
+				17EA607109573343A4EA6A4101F39EE0 /* Logger+IMAP.swift */,
+				2F693692FE2BB178762E6E41FEB4744E /* MailData+Decode.swift */,
+				8646161EC2D5E1BFFBA1CD60D88E37D8 /* MailPart+Enumeration.swift */,
+				4CC94878B25AD1DB7CD783AE04DC7D2E /* MailPart+Parsing.swift */,
+				905952C264E5B51C86842118AEF04B8E /* Message+Parsing.swift */,
+				293F91A49A2BADCE5A67B917C4D77115 /* MessageAttribute+Parsing.swift */,
+				B7871F69AAA9DF3BE0CC1315589781D0 /* MessageFlags+Parsing.swift */,
+				5351450C48BD2C1C963A172470D8D2F7 /* MessageHeader+Parsing.swift */,
+				1CC4BEFFA75BF4AD6F14E5F90AA44A56 /* MimeFields+Parsing.swift */,
+				EFF9F9F5109BFBF2D0B861E92FAF8FDE /* MimeType+Parsing.swift */,
+				B25690E401D9706BA65D7A7C3C8BD026 /* Postal.swift */,
+				B333EF825227AF3BEDB704B5BA7DDB4D /* PostalError.swift */,
+				4C66867998B57F4546E61FFC7855EE7A /* Util.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		6A2D00DB606075A9EF9A97D09D04E9B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				756A3D9297D3A0444063EE5C882B7639 /* Result.modulemap */,
+				B62B68D08BE6D8389B07FAE161AAD0D7 /* Result.xcconfig */,
+				A7433B085240B130278C926E6D60BA11 /* Result-dummy.m */,
+				B8C7E2AE52A3AF99D0FEB877697A2075 /* Result-Info.plist */,
+				770154CC2EC510186293FD2B4E338D7C /* Result-prefix.pch */,
+				35B45FE2B1391687F4D476E375BE751D /* Result-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Result";
+			sourceTree = "<group>";
+		};
+		8F34248C654480F659B02E46E93A9E32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40520CF46E70C5CA7D0D6797455AE895 /* Postal */,
+				0F947B7D5D856DCC47AAFB56AE02BDCC /* Result */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A524D82B5DB0B679FCFFD701E621D3F6 /* Pods-Deadline Creator */ = {
+			isa = PBXGroup;
+			children = (
+				59034FE2F7B87A37B50594BB060DAFDC /* Pods-Deadline Creator.modulemap */,
+				6FCE992943E043905125CC90937240F7 /* Pods-Deadline Creator-acknowledgements.markdown */,
+				F1945FA5D88F168E68F0E8AAD1545093 /* Pods-Deadline Creator-acknowledgements.plist */,
+				C3182DEFCC83EC1C46E72000534D65E6 /* Pods-Deadline Creator-dummy.m */,
+				FFD1D322DBACF69C5B3BDE3F4BE83198 /* Pods-Deadline Creator-frameworks.sh */,
+				2A1D38E0FA618E8110854C19DAA601F1 /* Pods-Deadline Creator-Info.plist */,
+				E33B9C8D2D00741468FA922CDBC3E8D8 /* Pods-Deadline Creator-umbrella.h */,
+				673F082CD0653FB88D332AC89C141E8F /* Pods-Deadline Creator.debug.xcconfig */,
+				59A75AC3414F2FE200046A6A6952DDCA /* Pods-Deadline Creator.release.xcconfig */,
+			);
+			name = "Pods-Deadline Creator";
+			path = "Target Support Files/Pods-Deadline Creator";
+			sourceTree = "<group>";
+		};
+		A60A1AD23A5096FB094EB86110BFCAC9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				734188E0BAE5942FE7910B74365C428F /* Postal.modulemap */,
+				99ED7A740C616079FE332A5002D991C9 /* Postal.xcconfig */,
+				C94F2BF91AC682EA610DB27D5916542E /* Postal-dummy.m */,
+				2AFE1B1C9A295A7A9271D003D56AA6A9 /* Postal-Info.plist */,
+				FCFD21C9B53A742EDF075BCC40A24536 /* Postal-prefix.pch */,
+				A798DC0A723AEB02F252D8F306C84DE2 /* Postal-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Postal";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				2F666FDD08EF95DE0843B230CF5643F3 /* Frameworks */,
+				8F34248C654480F659B02E46E93A9E32 /* Pods */,
+				3C7F5935769BB1FE2944C3942096216D /* Products */,
+				DD78090E7657FEF31D5ED2D48C880F09 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DD78090E7657FEF31D5ED2D48C880F09 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A524D82B5DB0B679FCFFD701E621D3F6 /* Pods-Deadline Creator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		547393C83CD626A8D8084D785C7C955E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3920A968250992EC2A4EB8546967DCD1 /* Pods-Deadline Creator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E57683A24448B2C1D67362392C5237 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C34C6939C5832D7405B3869B3BCF728 /* Result-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED100B291D8D0B4AC4F47831C40650BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2BEF32B488533AAA7D9A14C2608268 /* Postal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6B91270FBDD67C74BB019455544FE9DE /* Postal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500B8E69DEFAAC56F7A1FC4DBE788F7A /* Build configuration list for PBXNativeTarget "Postal" */;
+			buildPhases = (
+				ED100B291D8D0B4AC4F47831C40650BD /* Headers */,
+				71B4CA2D0AA167EA506F5FF8CD4096B5 /* Sources */,
+				3B1C628DB0361BDAF255DD0E10ADDD15 /* Frameworks */,
+				71D9553E3E2D3B0BEC309FB6CAA392E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C41C34A2B610AB93B1633F78A39BF993 /* PBXTargetDependency */,
+			);
+			name = Postal;
+			productName = Postal;
+			productReference = B5C98895A43D18D150C436F7E807C0D9 /* Postal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1B6F83F03244EB7A3253BA8E0E869C8 /* Result */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2322821197055C6262CA4A53A0AB07A9 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildPhases = (
+				94E57683A24448B2C1D67362392C5237 /* Headers */,
+				864090D9410EF520DD488953F185B2D2 /* Sources */,
+				1F89A7BCEE04A54790BFDF8A46911F51 /* Frameworks */,
+				86A0E5DC903D4AABBBFFA01EC5EFC7C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Result;
+			productName = Result;
+			productReference = 9132E6CEFC753F063EC95E919A9EA5BD /* Result.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A80AFA7B60F2A067504CE9E40C7F4EAD /* Pods-Deadline Creator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E560804C93327C79F85FA012F5710301 /* Build configuration list for PBXNativeTarget "Pods-Deadline Creator" */;
+			buildPhases = (
+				547393C83CD626A8D8084D785C7C955E /* Headers */,
+				ED48964C13E8353186C23FA18541FE04 /* Sources */,
+				2FD8F8DDA5679E4FFDFF78DEB80CB580 /* Frameworks */,
+				4422B6704CE06FD57362149C96D532DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				759FF3F4C176E20FDDC749338F6C03BC /* PBXTargetDependency */,
+				1F28AEEA6D8E20DCCCAD34A8F37A38CD /* PBXTargetDependency */,
+			);
+			name = "Pods-Deadline Creator";
+			productName = "Pods-Deadline Creator";
+			productReference = D9F4A1CD6556BE7FCCEF594CC4B1226B /* Pods_Deadline_Creator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3C7F5935769BB1FE2944C3942096216D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80AFA7B60F2A067504CE9E40C7F4EAD /* Pods-Deadline Creator */,
+				6B91270FBDD67C74BB019455544FE9DE /* Postal */,
+				A1B6F83F03244EB7A3253BA8E0E869C8 /* Result */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4422B6704CE06FD57362149C96D532DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D9553E3E2D3B0BEC309FB6CAA392E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A0E5DC903D4AABBBFFA01EC5EFC7C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71B4CA2D0AA167EA506F5FF8CD4096B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7748DCE41E5E6DA50EC9FA0C244035C0 /* Address+Parsing.swift in Sources */,
+				195BCEEF365E6EF3D68FFA0C40D2DA09 /* CertificateUtils.swift in Sources */,
+				AFA06772376D4F67246EB48625FD1202 /* Configuration.swift in Sources */,
+				D9155D2D63BEB96B0F22C32234FE24C3 /* ContentDisposition+Parsing.swift in Sources */,
+				867B150B3C9283E15E2C3665A2D3E380 /* ContentEncoding+Parsing.swift in Sources */,
+				A112D20E917D4B805F1842AE3A578B62 /* Extension+Parsing.swift in Sources */,
+				294A38A63023B9641CAF67AA0D3063A7 /* FetchResult.swift in Sources */,
+				22ECC1316BD05822F52BF07C2015292E /* IMAPCapability.swift in Sources */,
+				1E42BBDCAE455650BB7DF216818E35EA /* IMAPError.swift in Sources */,
+				CE90975C1B9FABFCEB12F2456F84E83D /* IMAPFolder.swift in Sources */,
+				A999F38368CF9D2723E68C829EE5C92E /* IMAPIdentity.swift in Sources */,
+				9B49F9EB9E5EDFCDA5743E772A6AE721 /* IMAPNamespace.swift in Sources */,
+				19E658C67885D2CE6BB086706F1E08C1 /* IMAPSession+Fetch.swift in Sources */,
+				B7DD3190F5A699D5EAA9CFDA9F1744C2 /* IMAPSession+Folder.swift in Sources */,
+				DC07A41FC1912EA0CFBBC764256CB2BE /* IMAPSession+List.swift in Sources */,
+				2EB7E337FA458E7432A8552096B60C90 /* IMAPSession+Move.swift in Sources */,
+				8D90B20DAC9295D0B9127E5C38E2066E /* IMAPSession+Search.swift in Sources */,
+				4CC4BEF4AE769221A9CF7B6C6E8ADF3F /* IMAPSession.swift in Sources */,
+				6A5D814BBA3B493406907C927A94CB61 /* IMFError.swift in Sources */,
+				0C410AE6BCECC5FD85B33CD69E6278BA /* Libetpan+Util.swift in Sources */,
+				BA4AB8E2657DD4DBF8350FFC3745AD20 /* Logger+IMAP.swift in Sources */,
+				324F0B793F838CDDF2E3B285471BD639 /* Logger.swift in Sources */,
+				D468A747FD2C7BD858F86CDD2491D57C /* MailData+Decode.swift in Sources */,
+				6FC26B53E23E9D7397365D48790CA6AB /* MailPart+Enumeration.swift in Sources */,
+				2911B698397987E8AF9E9AE1C57B743B /* MailPart+Parsing.swift in Sources */,
+				278C6F336EF6EA1F4857826A810E9AE3 /* Message+Parsing.swift in Sources */,
+				73946CBF1E560B9C3789E652DEAEB51E /* MessageAttribute+Parsing.swift in Sources */,
+				93622380794904A2440AA351AA11C16D /* MessageFlags+Parsing.swift in Sources */,
+				EB4F70CE969366D7CF4DF5FA1C323FC7 /* MessageHeader+Parsing.swift in Sources */,
+				5D0D1A3884DAAD967C10403352975619 /* MimeFields+Parsing.swift in Sources */,
+				419F2BC751F59DD8597C39040F7A65F1 /* MimeType+Parsing.swift in Sources */,
+				14B390F29F0E6F821129C9BAF3B5656E /* Postal-dummy.m in Sources */,
+				BBC666A7E8035C5EC9EF8B7781B65075 /* Postal.swift in Sources */,
+				AF94A9F4E38C1901E87E9C927CD4F13C /* PostalError.swift in Sources */,
+				1B8693C5DE3F42EC802E59233927EB03 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864090D9410EF520DD488953F185B2D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E286C6C085F0B054BD0CB30C603B58 /* Result-dummy.m in Sources */,
+				65BF73D560CCE494FA6E6E37C2384046 /* Result.swift in Sources */,
+				7E2145F3254D742758DAF8E59712DF26 /* ResultProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED48964C13E8353186C23FA18541FE04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073770D7BE5999EEB04BA379E5AD398E /* Pods-Deadline Creator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F28AEEA6D8E20DCCCAD34A8F37A38CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = A1B6F83F03244EB7A3253BA8E0E869C8 /* Result */;
+			targetProxy = D8283D73EE1A31E0E347E3B1C2668EF0 /* PBXContainerItemProxy */;
+		};
+		759FF3F4C176E20FDDC749338F6C03BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Postal;
+			target = 6B91270FBDD67C74BB019455544FE9DE /* Postal */;
+			targetProxy = D1CBF0718D5D4D072B83DA972A7165E4 /* PBXContainerItemProxy */;
+		};
+		C41C34A2B610AB93B1633F78A39BF993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = A1B6F83F03244EB7A3253BA8E0E869C8 /* Result */;
+			targetProxy = 04BACF04AC0F02D9970D5A5FBC57FD82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		183129E6B6CA31FC0AB2E3B0ED6D963F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62B68D08BE6D8389B07FAE161AAD0D7 /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Result-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				PRODUCT_MODULE_NAME = Result;
+				PRODUCT_NAME = Result;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6928B6F12FA74EEC8AA0D1B4790DDE00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99ED7A740C616079FE332A5002D991C9 /* Postal.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
+				PRODUCT_MODULE_NAME = Postal;
+				PRODUCT_NAME = Postal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A10D6362B72F11AA42758E449DD4961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62B68D08BE6D8389B07FAE161AAD0D7 /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Result-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				PRODUCT_MODULE_NAME = Result;
+				PRODUCT_NAME = Result;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C7194BD81F0B346094C086190ED582C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673F082CD0653FB88D332AC89C141E8F /* Pods-Deadline Creator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A79D5FFB3ABCC02A1EDA91A4336F8A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A75AC3414F2FE200046A6A6952DDCA /* Pods-Deadline Creator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Deadline Creator/Pods-Deadline Creator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E50E3294F0005C5DC5A94B199B4EA608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99ED7A740C616079FE332A5002D991C9 /* Postal.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
+				PRODUCT_MODULE_NAME = Postal;
+				PRODUCT_NAME = Postal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2322821197055C6262CA4A53A0AB07A9 /* Build configuration list for PBXNativeTarget "Result" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183129E6B6CA31FC0AB2E3B0ED6D963F /* Debug */,
+				6A10D6362B72F11AA42758E449DD4961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500B8E69DEFAAC56F7A1FC4DBE788F7A /* Build configuration list for PBXNativeTarget "Postal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6928B6F12FA74EEC8AA0D1B4790DDE00 /* Debug */,
+				E50E3294F0005C5DC5A94B199B4EA608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E560804C93327C79F85FA012F5710301 /* Build configuration list for PBXNativeTarget "Pods-Deadline Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7194BD81F0B346094C086190ED582C /* Debug */,
+				A79D5FFB3ABCC02A1EDA91A4336F8A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

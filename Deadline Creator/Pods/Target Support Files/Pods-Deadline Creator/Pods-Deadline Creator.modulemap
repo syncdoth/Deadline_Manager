@@ -1,0 +1,6 @@
+framework module Pods_Deadline_Creator {
+  umbrella header "Pods-Deadline Creator-umbrella.h"
+
+  export *
+  module * { export * }
+}
