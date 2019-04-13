@@ -1,22 +1,20 @@
 PODS:
-  - Postal (0.5.0):
-    - Postal/Core (= 0.5.0)
-  - Postal/Core (0.5.0):
-    - Result (~> 3.2)
-  - Result (3.2.4)
+  - p2.OAuth2 (4.2.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
-  - Postal
+  - p2.OAuth2
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Postal
-    - Result
+    - p2.OAuth2
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Postal: f131b117770a6238241222bb1a53dca0dc4bd561
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  p2.OAuth2: d5ea9b928fc5d10d088d419db6f3380578b6f866
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 2f760f98262ce96f689dff07eb0728ca7ba31fd1
+PODFILE CHECKSUM: 026543bfd59015f74726a89c6c7f784f9f96eefd
 
 COCOAPODS: 1.6.1
