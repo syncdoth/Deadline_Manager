@@ -1,0 +1,24 @@
+PODS:
+  - MKDataDetector (2.0.2)
+  - p2.OAuth2 (4.0.1)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - MKDataDetector
+  - p2.OAuth2 (~> 4.0.1)
+  - SwiftyJSON (~> 4.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MKDataDetector
+    - p2.OAuth2
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  MKDataDetector: 23ccee9b629361e16faccfce055e25f3155efb7a
+  p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: b157d5a99d01ca14bac79645da5803aef0ac1289
+
+COCOAPODS: 1.6.1

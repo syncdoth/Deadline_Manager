@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swift-tutorial/Account.swift"
+            timestampString = "576902792.2978261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "AccountCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_tutorial.AccountCell.nameLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "swift-tutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Godwithus/Desktop/swift-tutorial-master%20(original)/swift-tutorial/Account.swift"
+                  timestampString = "576948067.2158279"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_tutorial.AccountCell.nameLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "swift-tutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Godwithus/Desktop/swift-tutorial-master%20(original)/swift-tutorial/Account.swift"
+                  timestampString = "576948067.217658"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_tutorial.AccountCell.nameLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "swift-tutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Godwithus/Desktop/swift-tutorial-master%20(original)/swift-tutorial/Account.swift"
+                  timestampString = "576948067.219618"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_tutorial.AccountCell.nameLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "swift-tutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Godwithus/Desktop/swift-tutorial-master%20(original)/swift-tutorial/Account.swift"
+                  timestampString = "576948067.221275"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_tutorial.AccountCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; swift_tutorial.AccountCell"
+                  moduleName = "swift-tutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Godwithus/Desktop/swift-tutorial-master%20(original)/swift-tutorial/Account.swift"
+                  timestampString = "576948067.222798"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_tutorial.AccountCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;swift_tutorial.AccountCell&gt;"
+                  moduleName = "swift-tutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Godwithus/Desktop/swift-tutorial-master%20(original)/swift-tutorial/Account.swift"
+                  timestampString = "576948067.224496"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
