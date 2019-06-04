@@ -22,3 +22,5 @@ For each employee, read email, fetch recent emails and classify their importance
 2. Model learning - Apple's CoreML NLP classifier model to do sentiment analysis
 
 3. Build app to do login, fetch email, run classification using predefined model, and show the result.
+
+![alt text](email.png)
